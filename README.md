@@ -1,4 +1,4 @@
-# kabug-rb
+# test-inmetrics-api
 
 ** Como Executar o projeto
 * Importante ter o ruby instalado versão 2.5 ou superior
@@ -10,7 +10,7 @@ gem install bundler
 
 ### Instalar as Depedências do Ruby (projeto)
 '
-bundler install
+bundle install
 '
 
 ### Executar Localmente
@@ -21,4 +21,9 @@ bundle exec cucumber
 ### Executar no servidor CI (gerando reports JSON)
 '
 bundle exec cucumber -p ci
+'
+### Verificanficando os Reports no Allure (localmente)
+* Impotante ter o Allure Framework instalado
+'
+* Execute dentro da pasta logs: "allure serve allure_report"
 '
