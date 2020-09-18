@@ -2,7 +2,7 @@
 # Quando utilizar o allure, para visualizar o relatório localmente
 # execute dentro da pasta logs: "allure serve allure_report"
 
-default: -p pretty -p ci -p html_report -p report_online 
+default: -p pretty -p html_report -p report_online -p allure
 
 pretty: --format pretty
 ci: -p allure -p json_report -p report_online
