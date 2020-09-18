@@ -5,7 +5,7 @@
 default: -p pretty -p ci -p html_report -p report_online 
 
 pretty: --format pretty
-ci: -p allure -p json_report 
+ci: -p allure -p json_report -p report_online
 allure: --format pretty --format AllureCucumber::CucumberFormatter --out logs/allure_report
 html_report: --format html --out logs/results/html_report.html
 json_report: --format json --out logs/results/json_report.json
