@@ -1,0 +1,13 @@
+---
+# Quando utilizar o allure, para visualizar o relatório localmente
+# execute dentro da pasta logs: "allure serve allure_report"
+
+default: -p pretty -p ci -p html_report -p report_online 
+
+pretty: --format pretty
+ci: -p allure -p json_report 
+allure: --format pretty --format AllureCucumber::CucumberFormatter --out logs/allure_report
+html_report: --format html --out logs/results/html_report.html
+json_report: --format json --out logs/results/json_report.json
+report_online: --publish 
+
